@@ -1,0 +1,5 @@
+In data presentation, one byte contain 8 bit that 1 bit contain one binary number.
+ 
+one char is containing one byte. From hex or octal, that will be writen in binary, and then written in decimal and that char is following the ASCII char set rules.
+
+If that are numbers. It same like char but it depending on data size and the data presentation is just until decimal.
