@@ -1,0 +1,38 @@
+0111 1111 1111 1111 = 7FFFh = +32767
+
+1000 0000 0000 0000 (8000h)
+0111 1111 1111 1111 (7FFFh) Invert all the bits
+1000 0000 0000 0000 Add one to make it negative (8000h or -32768)
+
+0100 0000 0000 0000 = 4000h = +16384
+
+How to read a negative binary num?
+I'll try with 8bits
+
+1000 0000 minimum negative bits. 80h
+-128
+0111 1111 maximum positive bits. 7Fh
++127
+
+Again, how to read a negative binary num?
+What if I add one behind sign bit?
+
+1000 0000
+     0001
+---------
+1000 0001 = Is this really -127?
+
+I'll try to reverse 127 binary num
+
+0111 1111
+1000 0000
+
+If we add the binary above with one following the two's complement rule
+
+1000 0001 = Yes, this is really like above
+
+So how to read negative binary num is
+
+1		000 0000
+|		|______|
+Negative 2^x  + Positive, which x is Most Significant Bit(MSB).
