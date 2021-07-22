@@ -1,0 +1,21 @@
+We know that doing basic math with decimal is very easy.
+Let's test with binary
+
+In decimal, we do 17-10 = 7. Let's try with binary.
+
+00010001
+00001010
+--------
+00000111 = 7. We can do it like that.
+
+What if we try to change the operator but with same logic?
+We do 17-10 = 7 but with 17+(-10) = 7
+We know that MSB isn't just sign for minus. It's valuable and we can count it manually.
+Skip how to count minus binary with sign, let's try 17+(-10) = 7
+
+  00010001
+  11110110
+  --------
+1 00000111 = 7. Yes, this is very nice
+^
+We should discard this.
